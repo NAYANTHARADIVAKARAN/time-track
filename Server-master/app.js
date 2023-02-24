@@ -189,5 +189,3 @@ app.use(Express.static(path.join(__dirname, 'front_end-master\build')));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'front_end-master\build\index.html'));
 });
-
-app.listen(9000);
