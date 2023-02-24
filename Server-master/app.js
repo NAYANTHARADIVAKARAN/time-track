@@ -15,7 +15,7 @@ const task = require("./models/task")
 //create a variable
 const app = Express();
 
-app.use(Express.urlencoded({ extended: true })); //body-parser
+// app.use(Express.urlencoded({ extended: true })); //body-parser
 app.use(Express.json());                         //body-parser
 app.use(Cors());
 
