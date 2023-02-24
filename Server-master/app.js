@@ -184,10 +184,10 @@ app.listen(3001, () => {
 const path = require('path');
 
 
-app.use(Express.static(path.join(front_end-master, 'build')));
+app.use(Express.static(path.join(__dirname, 'build')));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(front_end-master, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.listen(9000);
