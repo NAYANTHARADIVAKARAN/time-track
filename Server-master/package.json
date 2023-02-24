@@ -4,10 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "echo \"No build specified\" && exit 1",
-    "test": "echo \"No test specified\" && exit 1",
-    "start": "node app.js"
-},
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "Stebin Cleetus",
   "license": "ISC",
   "dependencies": {
