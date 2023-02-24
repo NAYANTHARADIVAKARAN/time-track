@@ -178,3 +178,14 @@ app.get('/task', (req, res) => {
 app.listen(3001, () => {
     console.log("server running at 3001");
 })
+
+// ...............................................................................................................
+app.use(express.static(path.join(__dirname, "front_end-master\build")));
+app.get("*", function (_, res) {
+  res.sendFile(
+    path.join(__dirname, "front_end-master\build\index.html"),
+    function (err) {
+      res.status(500).send(err);
+    }
+  );
+});
