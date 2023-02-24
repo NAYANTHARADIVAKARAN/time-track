@@ -2,16 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js", 
+  "main": "app.js",
   "scripts": {
-      "build": "echo \"No build specified\" && exit 1",
-      "test": "echo \"No test specified\" && exit 1",
-      "start": "node app.js"
-      },
-  "repository": {
-          "type": "git",
-          "url": "git+https://github.com/NAYANTHARADIVAKARAN/time-track.git"
-      },
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "Stebin Cleetus",
   "license": "ISC",
   "dependencies": {
@@ -21,10 +15,5 @@
     "jsonwebtoken": "^9.0.0",
     "moment": "^2.29.4",
     "mongoose": "^6.9.2"
-  },
-  "bugs": {
-           "url": "https://github.com/NAYANTHARADIVAKARAN/time-track/issues"
-       },
-       "homepage": "https://github.com/NAYANTHARADIVAKARAN/time-track#readme"
+  }
 }
-

@@ -180,12 +180,14 @@ app.listen(3001, () => {
 })
 
 // ...............................................................................................................
-// app.use(Express.static(path.join(__dirname, "front_end-master\build")));
-// app.get("*", function (_, res) {
-//   res.sendFile(
-//     path.join(__dirname, "front_end-master\build\index.html"),
-//     function (err) {
-//       res.status(500).send(err);
-//     }
-//   );
-// });
+;
+const path = require('path');
+
+
+app.use(Express.static(path.join(front_end-master, 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(front_end-master, 'build', 'index.html'));
+});
+
+app.listen(9000);
